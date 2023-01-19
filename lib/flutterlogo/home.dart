@@ -12,16 +12,13 @@ class LogoHome extends StatefulWidget {
 }
 
 class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
-  //animation controllers
   AnimationController? topController;
   AnimationController? middleController;
   AnimationController? bottomController;
-  //AnimationController? logoController;
 
   Animation<double>? topAnimation;
   Animation<double>? middleAnimation;
   Animation<double>? bottomAnimation;
-  //Animation<double>? logoAnimation;
 
   @override
   void initState() {
@@ -29,7 +26,6 @@ class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
     middleController = AnimationController(vsync: this, duration: const Duration(seconds: 5));
     topController = AnimationController(vsync: this, duration: const Duration(seconds: 7));
 
-    //logoAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(logoController!);
     bottomAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(bottomController!);
     Timer(const Duration(seconds: 1), () {
       bottomController!.forward();
@@ -87,7 +83,6 @@ class LogoPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    print(bottomProgress);
 
     const double unit = 50;
     const double originX = 2;
@@ -129,11 +124,6 @@ class LogoPainter extends CustomPainter {
     top.relativeLineTo(-unit*4.52, unit*4.52);
     top.relativeLineTo(-unit*1, -unit*1);
     top.close();
-
-
-    //canvas.drawPath(top, paint);
-    //canvas.drawPath(middle, paint);
-    //canvas.drawPath(bottom, paint);
 
     animatePath(bottom, bottomPaint, canvas, bottomProgress!);
     animatePath(middle, middlePaint, canvas, middleProgress!);
