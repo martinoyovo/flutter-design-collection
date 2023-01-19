@@ -16,45 +16,24 @@ class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
   AnimationController? topController;
   AnimationController? middleController;
   AnimationController? bottomController;
-  AnimationController? logoController;
+  //AnimationController? logoController;
 
   Animation<double>? topAnimation;
   Animation<double>? middleAnimation;
   Animation<double>? bottomAnimation;
-  Animation<double>? logoAnimation;
+  //Animation<double>? logoAnimation;
 
   @override
   void initState() {
-    logoController = AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    bottomController = AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    middleController = AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    topController = AnimationController(vsync: this, duration: const Duration(seconds: 4));
+    bottomController = AnimationController(vsync: this, duration: const Duration(seconds: 5));
+    middleController = AnimationController(vsync: this, duration: const Duration(seconds: 5));
+    topController = AnimationController(vsync: this, duration: const Duration(seconds: 7));
 
-    logoAnimation =
-        Tween<double>(begin: 0.0, end: 1.0).animate(logoController!);
-    bottomAnimation =
-        Tween<double>(begin: 0.0, end: 1.0).animate(bottomController!);
-
+    //logoAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(logoController!);
+    bottomAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(bottomController!);
     Timer(const Duration(seconds: 1), () {
-      logoController!.forward();
       bottomController!.forward();
     });
-
-    logoController!.addListener(() {
-      if (logoAnimation!.value == 1) {
-        middleController!.forward();
-        middleAnimation =
-            Tween<double>(begin: 0.0, end: 1.0).animate(middleController!);
-      }
-      setState(() {});
-    });
-
-    bottomController!.forward();
-
-    bottomController!.addListener(() {
-      setState(() {});
-    });
-
     bottomController!.addListener(() {
       if (bottomAnimation!.value == 1) {
         middleController!.forward();
@@ -73,23 +52,12 @@ class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
       setState(() {});
     });
 
-    /*topController!.addListener(() {
-      if (middleAnimation!.value == 1) {
-        topController!.forward();
-        topAnimation =
-            Tween<double>(begin: 0.0, end: 1.0).animate(topAnimation!);
-      }
+    topController!.addListener(() {
       setState(() {});
-    });*/
-
+    });
 
     super.initState();
-  }
 
-  @override
-  void dispose() {
-    bottomController!.dispose();
-    super.dispose();
   }
 
   @override
@@ -97,9 +65,9 @@ class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
     return Material(
       color: Colors.black,
       child: CustomPaint(
+        size: Size.infinite,
         painter: LogoPainter(
-          logoProgress:logoAnimation!.value,
-          bottomProgress: bottomAnimation?.value ?? 0,
+          bottomProgress: bottomAnimation!.value,
           middleProgress: middleAnimation?.value ?? 0,
           topProgress: topAnimation?.value ?? 0,
         ),
@@ -111,12 +79,11 @@ class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
 
 
 class LogoPainter extends CustomPainter {
-  final double? logoProgress;
   final double? topProgress;
   final double? middleProgress;
   final double? bottomProgress;
 
-  LogoPainter({this.topProgress, this.middleProgress, this.bottomProgress, this.logoProgress});
+  LogoPainter({this.topProgress, this.middleProgress, this.bottomProgress});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -126,10 +93,20 @@ class LogoPainter extends CustomPainter {
     const double originX = 2;
     const double originY = 6;
 
-    final paint = Paint()
+    final bottomPaint = Paint()
       ..strokeWidth = 4
-      ..color = Colors.white
-      ..style = PaintingStyle.stroke;
+      ..color = topProgress == 1.0 ? const Color(0xFF0C64A9) : Colors.white
+      ..style = topProgress == 1.0 ? PaintingStyle.fill : PaintingStyle.stroke;
+
+    final middlePaint = Paint()
+      ..strokeWidth = 4
+      ..color = topProgress == 1.0 ? const Color(0xFF62CFFC) : Colors.white
+      ..style = topProgress == 1.0 ? PaintingStyle.fill : PaintingStyle.stroke;
+
+    final topPaint = Paint()
+      ..strokeWidth = 4
+      ..color = topProgress == 1.0 ? const Color(0xFF62CFFC) : Colors.white
+      ..style = topProgress == 1.0 ? PaintingStyle.fill : PaintingStyle.stroke;
 
     final bottom = Path();
     bottom.moveTo(unit*(2+originX), unit*(4+originY));
@@ -138,14 +115,13 @@ class LogoPainter extends CustomPainter {
     bottom.relativeLineTo(-unit*2, -unit*2);
     bottom.close();
 
-    animatePath(bottom, paint, canvas, bottomProgress!);
-
     final middle = Path();
     middle.moveTo(unit*(1+originX), unit*(5+originY));
     middle.relativeLineTo(unit*2, -unit*2);
     middle.relativeLineTo(unit*2, 0);
     middle.relativeLineTo(-unit*3, unit*3);
     middle.close();
+
 
     final top = Path();
     top.moveTo(unit*(3+originX), unit*(0+originY));
@@ -154,11 +130,14 @@ class LogoPainter extends CustomPainter {
     top.relativeLineTo(-unit*1, -unit*1);
     top.close();
 
-    canvas.drawPath(top, paint);
-    canvas.drawPath(middle, paint);
-    canvas.drawPath(bottom, paint);
 
-    //animatePath(bottom, paint, canvas, bottomProgress!);
+    //canvas.drawPath(top, paint);
+    //canvas.drawPath(middle, paint);
+    //canvas.drawPath(bottom, paint);
+
+    animatePath(bottom, bottomPaint, canvas, bottomProgress!);
+    animatePath(middle, middlePaint, canvas, middleProgress!);
+    animatePath(top, topPaint, canvas, topProgress!);
 
   }
 
@@ -176,5 +155,5 @@ class LogoPainter extends CustomPainter {
 
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 }
