@@ -1,16 +1,31 @@
-# flutter_logo_animation
+# 😍🔥 Flutter Custom Design Challenges 💙 [![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)](https://twitter.com/martinoyovo)
 
-A new Flutter project.
+This project contains list of Flutter Custom Design Challenges and Flutter UI Kits
 
-## Getting Started
+Star⭐ the repo and follow me if you like what you see🤩.
 
-This project is a starting point for a Flutter application.
+## ✨ Requirements
 
-A few resources to get you started if this is your first Flutter project:
+* Any Operating System (ie. MacOS X, Linux, Windows)
+* Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+* A little knowledge of Dart and Flutter
+* A brain to think 😂😂
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Get Started
+Run:
+```shell
+git clone https://github.com/martinoyovo/flutter-design-collection.git
+flutter clean
+flutter packages get
+flutter run
+```
+
+## Screenshots & Gifs
+
+<img src="screenshots/flutterlogo.mp4" width="200">
+
+## Author(s)
+
+**
+Martino Yovo** [![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)](https://twitter.com/martinoyovo)
