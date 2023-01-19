@@ -108,7 +108,7 @@ class LogoPainter extends CustomPainter {
     bottom.relativeLineTo(unit*3, unit*3);
     bottom.relativeLineTo(-unit*2, 0);
     bottom.relativeLineTo(-unit*2, -unit*2);
-    bottom.close();
+    //bottom.close();
 
     final middle = Path();
     middle.moveTo(unit*(1+originX), unit*(5+originY));
