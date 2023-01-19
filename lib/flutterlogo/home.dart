@@ -73,7 +73,6 @@ class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
   }
 }
 
-
 class LogoPainter extends CustomPainter {
   final double? topProgress;
   final double? middleProgress;
