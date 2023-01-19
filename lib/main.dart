@@ -17,10 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Transform.scale(
-        scale: 0.8,
-        child: const LogoHome()
-      )
+      home: const LogoHome()
     );
   }
 }
