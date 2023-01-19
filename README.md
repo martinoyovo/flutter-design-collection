@@ -23,7 +23,7 @@ flutter run
 
 ## Screenshots & Gifs
 
-<img src="screenshots/flutterlogo.mp4" width="200">
+<img src="https://github.com/martinoyovo/flutter-design-collection/blob/main/screenshots/flutterlogo.mp4" width="200">
 
 ## Author(s)
 
