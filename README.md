@@ -1,6 +1,6 @@
-# 😍🔥 Flutter Custom Design Challenges 💙 [![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)](https://twitter.com/martinoyovo)
+# 😍🔥 Flutter Custom Design Collection 💙 [![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)](https://twitter.com/martinoyovo)
 
-A collection of Flutter Custom Design Challenges and Flutter UI Kits
+A collection of Flutter Custom Designs and Flutter UI Kits.
 
 Star⭐ the repo and follow me if you like what you see🤩.
 
