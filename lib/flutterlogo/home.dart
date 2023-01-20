@@ -69,8 +69,8 @@ class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
   }
 
   double _scaleFactor = 0.8;
-  double originX = 3;
-  double originY = 7;
+  double originX = 2;
+  double originY = 6;
 
   @override
   Widget build(BuildContext context) {
@@ -140,7 +140,7 @@ class LogoPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
 
-    const double unit = 40;
+    const double unit = 50;
 
     final bottomPaint = Paint()
       ..strokeWidth = 4
