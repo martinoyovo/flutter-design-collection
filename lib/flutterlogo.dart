@@ -4,14 +4,14 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 
-class LogoHome extends StatefulWidget {
-  const LogoHome({Key? key}) : super(key: key);
+class FlutterLogoPage extends StatefulWidget {
+  const FlutterLogoPage({Key? key}) : super(key: key);
 
   @override
-  State<LogoHome> createState() => _LogoHomeState();
+  State<FlutterLogoPage> createState() => _FlutterLogoPageState();
 }
 
-class _LogoHomeState extends State<LogoHome> with TickerProviderStateMixin {
+class _FlutterLogoPageState extends State<FlutterLogoPage> with TickerProviderStateMixin {
   AnimationController? topController;
   AnimationController? middleController;
   AnimationController? bottomController;
