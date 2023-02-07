@@ -1,3 +1,9 @@
+/*
+Bike Animation with Custom Paint
+Created by Martino Yovo
+https://twitter.com/martinoyovo
+*/
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
@@ -344,3 +350,8 @@ class RoadPainter extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 
 }
+
+/*
+Credits:
+https://www.instagram.com/reel/Ce6ftCgj9bb/?igshid=MDJmNzVkMjY%3D
+*/

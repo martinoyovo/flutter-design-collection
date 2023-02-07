@@ -1,6 +1,11 @@
+/*
+Flutter Logo Animation
+Created by Martino Yovo
+https://twitter.com/martinoyovo
+*/
+
 import 'dart:async';
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 
