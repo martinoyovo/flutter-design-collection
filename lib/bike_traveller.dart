@@ -285,8 +285,6 @@ class WheelOnePainter extends CustomPainter {
     //wheel border
     canvas.drawCircle(wheelCenter, 65, wheelPainter());
 
-    //double degreesToRadians(double degrees) => math.pi*degrees / 180.0;
-
     //lines
     canvas.drawLine(wheelCenter, Offset(wheelCenterX+65*math.cos(speed!), wheelCenterY+65*math.sin(speed!)), wheelPainter());
 
