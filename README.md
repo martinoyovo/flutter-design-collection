@@ -1,6 +1,7 @@
 # 😍🔥 Flutter Animation Collection 💙 ![GitHub stars](https://img.shields.io/github/stars/martinoyovo/flutter-design-collection?style=social)
 
-![Built with](https://img.shields.io/badge/platform-Flutter-blue)  
+![Bike Animation](https://img.shields.io/badge/platform-Flutter-blue)
+![Repository size](https://img.shields.io/github/repo-size/martinoyovo/flutter-design-collection)
 ![GitHub follow](https://img.shields.io/github/followers/martinoyovo?style=social)
 
 A collection of Flutter Custom Animations and UI Kits.
