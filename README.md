@@ -1,11 +1,11 @@
-# 😍🔥 Flutter Animation Collection 💙 [GitHub stars](https://img.shields.io/github/stars/martinoyovo/flutter-design-collection?style=social)
+# 😍🔥 Flutter Animation Collection 💙 ![GitHub stars](https://img.shields.io/github/stars/martinoyovo/flutter-design-collection?style=social)
 
 ![Built with](https://img.shields.io/badge/platform-Flutter-blue)  
 ![GitHub follow](https://img.shields.io/github/followers/martinoyovo?style=social)
 
 A collection of Flutter Custom Animations and UI Kits.
 
-Star⭐ the repo and follow me if you like what you see🤩 [![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)]
+Star⭐ the repo and follow me if you like what you see🤩 ![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)
 
 ## ✨ Requirements
 
