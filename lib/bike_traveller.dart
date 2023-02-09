@@ -268,6 +268,8 @@ Paint wheelPainter({double? strokeWidth, StrokeCap? strokeCap, PaintingStyle? st
 
 const double unit = 50;
 
+double degreesToRadians(double degrees) => math.pi*degrees / 180.0;
+
 
 class WheelOnePainter extends CustomPainter { 
   final double? speed;
@@ -291,12 +293,26 @@ class WheelOnePainter extends CustomPainter {
     //wheel border
     canvas.drawCircle(wheelCenter, 65, wheelPainter());
 
+
+    final arcRect = Rect.fromCircle(center: wheelCenter, radius: 40);
+    final startAngle = degreesToRadians(0)*math.tan(speed!);
+    final sweepAngle = degreesToRadians(60)*math.tan(speed!);
+    canvas.drawArc(arcRect, startAngle, sweepAngle, true, wheelPainter(strokeCap: StrokeCap.round, strokeWidth: 7, style: PaintingStyle.fill));
+
+    final startAngle2 = degreesToRadians(180)*math.tan(speed!);
+    final sweepAngle2 = degreesToRadians(-60)*math.tan(speed!);
+    canvas.drawArc(arcRect, startAngle2, sweepAngle2, true, wheelPainter(strokeCap: StrokeCap.round, strokeWidth: 7, style: PaintingStyle.fill));
+
+    final startAngle3 = degreesToRadians(-60)*math.tan(speed!);
+    final sweepAngle3 = degreesToRadians(-60)*math.tan(speed!);
+    canvas.drawArc(arcRect, startAngle3, sweepAngle3, true, wheelPainter(strokeCap: StrokeCap.round, strokeWidth: 7, style: PaintingStyle.fill));
+
     //lines
-    canvas.drawLine(wheelCenter, Offset(wheelCenterX+65*math.cos(speed!), wheelCenterY+65*math.sin(speed!)), wheelPainter());
+    //canvas.drawLine(wheelCenter, Offset(wheelCenterX+65*math.cos(speed!), wheelCenterY+65*math.sin(speed!)), wheelPainter());
 
-    canvas.drawLine(wheelCenter, Offset(wheelCenterX-60*math.sin(speed!), wheelCenterY+70*math.cos(speed!)), wheelPainter());
+    //canvas.drawLine(wheelCenter, Offset(wheelCenterX-60*math.sin(speed!), wheelCenterY+70*math.cos(speed!)), wheelPainter());
 
-    canvas.drawLine(wheelCenter, Offset(wheelCenterX+70*math.sin(speed!), wheelCenterY-55*math.cos(speed!)), wheelPainter());
+    //canvas.drawLine(wheelCenter, Offset(wheelCenterX+70*math.sin(speed!), wheelCenterY-55*math.cos(speed!)), wheelPainter());
   }
 
   @override
@@ -325,12 +341,25 @@ class WheelTwoPainter extends CustomPainter {
     //wheel border
     canvas.drawCircle(wheelCenter, 65, wheelPainter());
 
+    final arcRect = Rect.fromCircle(center: wheelCenter, radius: 40);
+    final startAngle = degreesToRadians(0)*math.tan(speed!);
+    final sweepAngle = degreesToRadians(60)*math.tan(speed!);
+    canvas.drawArc(arcRect, startAngle, sweepAngle, true, wheelPainter(strokeCap: StrokeCap.round, strokeWidth: 7, style: PaintingStyle.fill));
+
+    final startAngle2 = degreesToRadians(180)*math.tan(speed!);
+    final sweepAngle2 = degreesToRadians(-60)*math.tan(speed!);
+    canvas.drawArc(arcRect, startAngle2, sweepAngle2, true, wheelPainter(strokeCap: StrokeCap.round, strokeWidth: 7, style: PaintingStyle.fill));
+
+    final startAngle3 = degreesToRadians(-60)*math.tan(speed!);
+    final sweepAngle3 = degreesToRadians(-60)*math.tan(speed!);
+    canvas.drawArc(arcRect, startAngle3, sweepAngle3, true, wheelPainter(strokeCap: StrokeCap.round, strokeWidth: 7, style: PaintingStyle.fill));
+    
     //lines
-    canvas.drawLine(wheelCenter, Offset(wheelCenterX+65*math.cos(speed!), wheelCenterY+65*math.sin(speed!)), wheelPainter());
+    //canvas.drawLine(wheelCenter, Offset(wheelCenterX+65*math.cos(speed!), wheelCenterY+65*math.sin(speed!)), wheelPainter());
 
-    canvas.drawLine(wheelCenter, Offset(wheelCenterX-60*math.sin(speed!), wheelCenterY+70*math.cos(speed!)), wheelPainter());
+    //canvas.drawLine(wheelCenter, Offset(wheelCenterX-60*math.sin(speed!), wheelCenterY+70*math.cos(speed!)), wheelPainter());
 
-    canvas.drawLine(wheelCenter, Offset(wheelCenterX+70*math.sin(speed!), wheelCenterY-55*math.cos(speed!)), wheelPainter());
+    //canvas.drawLine(wheelCenter, Offset(wheelCenterX+70*math.sin(speed!), wheelCenterY-55*math.cos(speed!)), wheelPainter());
   }
 
   @override
@@ -350,6 +379,7 @@ class RoadPainter extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 
 }
+
 
 /*
 Credits:
