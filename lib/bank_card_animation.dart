@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_logo_animation/stats.dart';
-import 'package:flutter_logo_animation/utils.dart';
+import 'package:flutter_logo_animation/utils/stats.dart';
+import 'package:flutter_logo_animation/utils/utils.dart';
 
 class BankCardAnimation extends StatefulWidget {
   const BankCardAnimation({Key? key}) : super(key: key);
