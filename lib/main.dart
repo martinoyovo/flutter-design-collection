@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_logo_animation/bike_traveller.dart';
+import 'package:flutter_logo_animation/bank_card_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const BikeTraveller()
+      home: const BankCardAnimation()
     );
   }
 }
