@@ -97,18 +97,61 @@ class _BankCardAnimationState extends State<BankCardAnimation> with TickerProvid
                       ),
                     ),
                   ),
-                  if (heightAnimation!.value >= 0.8) Align(
-                    alignment: Alignment.center,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(height: 30,),
-                        const Text('WEEKLY STATUS', style: TextStyle(fontSize: 30, color: Colors.white),),
-                        const SizedBox(height: 20,),
-                        Center(
-                          child: Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 55),
+                  if (heightAnimation!.value >= 0.8) ...[
+                    Positioned(
+                      top: size.height*0.4,
+                      left: 20,
+                      right: 20,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: activeTabData.map((valueList) {
+                              return Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  AnimatedContainer(
+                                    duration: const Duration(milliseconds: 500),
+                                    width: 26,
+                                    height: double.parse(valueList['value'].toString())*6,
+                                    margin: const EdgeInsets.symmetric(horizontal: 20),
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        border: Border.all(color: Colors.white, width: 2.5)
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20,),
+                                  Text('${valueList['value']}\$',
+                                    style: const TextStyle(
+                                        fontSize: 17,
+                                        color: Colors.white
+                                    ),
+                                  ),
+                                ],
+                              );
+                            }).toList(),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Positioned(
+                      top: size.height*0.25,
+                      left: 20,
+                      right: 20,
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Text('WEEKLY STATUS', style: TextStyle(fontSize: 30, color: Colors.white),),
+                            ],
+                          ),
+                          const SizedBox(height: 14,),
+                          Container(
+                            margin: const EdgeInsets.symmetric(horizontal: 35),
                             decoration: BoxDecoration(
                                 boxShadow: [
                                   BoxShadow(
@@ -147,43 +190,21 @@ class _BankCardAnimationState extends State<BankCardAnimation> with TickerProvid
                               }).toList(),
                             ),
                           ),
-                        ),
-                        const SizedBox(height: 40,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: activeTabData.map((valueList) {
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                AnimatedContainer(
-                                  duration: const Duration(milliseconds: 500),
-                                  width: 26,
-                                  height: double.parse(valueList['value'].toString())*6,
-                                  margin: const EdgeInsets.symmetric(horizontal: 20),
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      border: Border.all(color: Colors.white, width: 2.5)
-                                  ),
-                                ),
-                                const SizedBox(height: 20,),
-                                Text('${valueList['value']}\$',
-                                  style: const TextStyle(
-                                      fontSize: 17,
-                                      color: Colors.white
-                                  ),
-                                ),
-                              ],
-                            );
-                          }).toList(),
-                        ),
-
-                        const SizedBox(height: 80,),
-
-                        const Text('TOTAL : 425\$', style: TextStyle(color: Colors.white, fontSize: 35),)
-                      ],
+                        ],
+                      ),
                     ),
-                  ) else const SizedBox()
+                    Positioned(
+                      bottom: size.height*0.18,
+                      left: 20,
+                      right: 20,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Text('TOTAL : 425\$', style: TextStyle(color: Colors.white, fontSize: 35),)
+                        ],
+                      ),
+                    ),
+                  ] else const SizedBox()
                 ],
               );
             }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_logo_animation/bank_card_animation.dart';
+import 'package:flutter_logo_animation/photo_animation.dart';
 
 void main() {
   runApp(const MyApp());
