@@ -29,8 +29,8 @@ flutter run
 
 ---
 
-#### Animated Flutter Logo -- [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/flutterlogo.dart)
-![Animated Flutter Logo](screenshots/flutterlogo.gif)
+#### Bike Animation -- [Bike Animation](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/bike_traveller.dart)
+![Bike Animation](screenshots/bike_animation.gif)
 
 ---
 
