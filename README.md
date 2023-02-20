@@ -8,13 +8,7 @@ A collection of Flutter Custom Animations and UI Kits.
 
 Star⭐ the repo and follow me if you like what you see🤩 ![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)
 
-## ✨ Requirements
-
-* Any Operating System (ie. MacOS X, Linux, Windows)
-* Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-* A little knowledge of Dart and Flutter
-* A brain to think 😂😂
-
+## Subscribe to my [Youtube Channel](https://www.youtube.com/@flutterease001)
 
 ## Get Started
 Run:
@@ -26,6 +20,14 @@ flutter run
 ```
 
 ## Screenshots & Gifs
+
+#### Animation that extends a card to full screen on tap -- [Youtube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/bank_card_animation.dart)
+![Animated Flutter Logo](screenshots/bank_card_animation.gif)
+|              Example             |             Banner           |
+| :----------------------------------: | :----------------------------------: |
+| ![Animated Flutter Logo](screenshots/bank_card_animation.gif) | ![Bank card animation](screenshots/session_001.png) |
+
+---
 
 #### Animated Flutter Logo -- [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/flutterlogo.dart)
 ![Animated Flutter Logo](screenshots/flutterlogo.gif)
