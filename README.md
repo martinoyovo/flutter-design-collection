@@ -34,8 +34,8 @@ flutter run
 
 ---
 
-#### Bike Animation -- [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/bike_traveler.dart)
-![Bike Animation](screenshots/bike_animation.gif)
+#### Animated Flutter Logo -- [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/flutterlogo.dart)
+![Animated Flutter Logo](screenshots/flutterlogo.gif)
 
 
 A few resources to get you started if this is your first Flutter project:
