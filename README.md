@@ -29,7 +29,7 @@ flutter run
 
 ---
 
-#### Bike Animation -- [Bike Animation](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/bike_traveller.dart)
+#### Bike Animation -- [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/bike_traveller.dart)
 ![Bike Animation](screenshots/bike_animation.gif)
 
 ---
