@@ -12,14 +12,14 @@ List<Color> colorList = [
   Colors.orange,
 ];
 
-class PhotoAnimation extends StatefulWidget {
-  const PhotoAnimation({Key? key}) : super(key: key);
+class CustomLoader extends StatefulWidget {
+  const CustomLoader({Key? key}) : super(key: key);
 
   @override
-  State<PhotoAnimation> createState() => _PhotoAnimationState();
+  State<CustomLoader> createState() => _CustomLoaderState();
 }
 
-class _PhotoAnimationState extends State<PhotoAnimation> with TickerProviderStateMixin {
+class _CustomLoaderState extends State<CustomLoader> with TickerProviderStateMixin {
 
   AnimationController? animationController;
 

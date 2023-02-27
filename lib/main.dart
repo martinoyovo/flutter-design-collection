@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_logo_animation/bank_card_animation.dart';
-import 'package:flutter_logo_animation/photo_animation.dart';
+import 'package:flutter_logo_animation/custom_loader.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PhotoAnimation()
+      home: const CustomLoader()
     );
   }
 }
