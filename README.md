@@ -4,7 +4,7 @@
 ![Repository size](https://img.shields.io/github/repo-size/martinoyovo/flutter-design-collection)
 ![GitHub follow](https://img.shields.io/github/followers/martinoyovo?style=social)
 
-A collection of Flutter Custom Animations and UI Kits.
+A collection of Flutter Animations and UI Kits.
 
 Star⭐ the repo and follow me if you like what you see🤩 ![Twitter Follow](https://img.shields.io/twitter/follow/martinoyovo.svg?style=social)
 
@@ -20,6 +20,14 @@ flutter run
 ```
 
 ## Screenshots & Gifs
+
+#### Animation that extends a card to full screen on tap -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/custom_loader.dart)
+![Custom Loader](screenshots/custom_loader.gif)
+|              Example             |             Banner           |
+| :----------------------------------: | :----------------------------------: |
+| ![Custom Loader](screenshots/bank_card_animation.gif) | ![Custom Loader](screenshots/session_001.png) |
+
+---
 
 #### Animation that extends a card to full screen on tap -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/bank_card_animation.dart)
 ![Bank card animation](screenshots/bank_card_animation.gif)
