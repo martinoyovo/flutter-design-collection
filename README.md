@@ -22,10 +22,10 @@ flutter run
 ## Screenshots & Gifs
 
 #### Animation that extends a card to full screen on tap -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/custom_loader.dart)
-![Custom Loader](screenshots/custom_loader.gif)
+![Custom Loader](screenshots/custom_loader.mov)
 |              Example             |             Banner           |
 | :----------------------------------: | :----------------------------------: |
-| ![Custom Loader](screenshots/custom_loader.gif) | ![Custom Loader](screenshots/session_002.png) |
+| ![Custom Loader](screenshots/custom_loader.mov) | ![Custom Loader](screenshots/session_002.png) |
 
 ---
 
