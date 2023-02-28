@@ -25,7 +25,7 @@ flutter run
 ![Custom Loader](screenshots/custom_loader.gif)
 |              Example             |             Banner           |
 | :----------------------------------: | :----------------------------------: |
-| ![Custom Loader](screenshots/custom_loader.gif) | ![Custom Loader](screenshots/session_001.png) |
+| ![Custom Loader](screenshots/custom_loader.gif) | ![Custom Loader](screenshots/session_002.png) |
 
 ---
 
