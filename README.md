@@ -21,19 +21,19 @@ flutter run
 
 ## Screenshots & Gifs
 
+#### Moving car animation -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-moving-car-animation)
+![Moving car animation](https://github.com/martinoyovo/flutter-moving-car-animation/blob/moving_car/car_driving_animation.gif)
+|              Example             |             Banner           |
+| :----------------------------------: | :----------------------------------: |
+| ![Moving car animation](https://github.com/martinoyovo/flutter-moving-car-animation/blob/moving_car/car_driving_animation.gif) | ![Moving car animation](https://github.com/martinoyovo/flutter-moving-car-animation/blob/moving_car/session_003.png) |
+
+---
+
 #### Animation that extends a card to full screen on tap -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/custom_loader.dart)
 ![Custom Loader](screenshots/custom_loader.gif)
 |              Example             |             Banner           |
 | :----------------------------------: | :----------------------------------: |
 | ![Custom Loader](screenshots/custom_loader.gif) | ![Custom Loader](screenshots/session_002.png) |
-
----
-
-#### Moving car animation -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-moving-car-animation)
-![Custom Loader](screenshots/custom_loader.gif)
-|              Example             |             Banner           |
-| :----------------------------------: | :----------------------------------: |
-| ![Custom Loader](https://github.com/martinoyovo/flutter-moving-car-animation/car_driving_animation.gif) | ![Custom Loader](https://github.com/martinoyovo/flutter-moving-car-animation/session_002.png) |
 
 ---
 
