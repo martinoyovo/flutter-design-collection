@@ -29,6 +29,14 @@ flutter run
 
 ---
 
+#### Moving car animation -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-moving-car-animation)
+![Custom Loader](screenshots/custom_loader.gif)
+|              Example             |             Banner           |
+| :----------------------------------: | :----------------------------------: |
+| ![Custom Loader](https://github.com/martinoyovo/flutter-moving-car-animation/car_driving_animation.gif) | ![Custom Loader](https://github.com/martinoyovo/flutter-moving-car-animation/session_002.png) |
+
+---
+
 #### Animation that extends a card to full screen on tap -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/bank_card_animation.dart)
 ![Bank card animation](screenshots/bank_card_animation.gif)
 |              Example             |             Banner           |
