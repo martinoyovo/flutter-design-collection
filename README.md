@@ -21,6 +21,14 @@ flutter run
 
 ## Screenshots & Gifs
 
+#### Breathe/Flower animation -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/flower.dart)
+![Breathe Animation](screenshots/flower.gif)
+|              Example             |             Banner           |
+| :----------------------------------: | :----------------------------------: |
+| ![Breathe Animation](screenshots/flower.gif) | ![Breathe Animation](screenshots/session_004.png) |
+
+---
+
 #### Moving car animation -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-moving-car-animation)
 ![Moving car animation](https://github.com/martinoyovo/flutter-moving-car-animation/blob/moving_car/car_driving_animation.gif)
 |              Example             |             Banner           |
