@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_logo_animation/utils.dart';
 import 'dart:math' as math;
 
 class FlowerAnimation extends StatefulWidget {
@@ -272,3 +271,12 @@ class PetalClipper extends CustomClipper<Path> {
   }
 
 }
+
+
+const bgColor = Color(0xFF531A93);
+
+const color1 = Color(0xFF35C4E4);
+const color2 = Color(0xFF57ECAF);
+
+const color3 = Color(0xFFEE2081);
+const color4 = Colors.orange;
