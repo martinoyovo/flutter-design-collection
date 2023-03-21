@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_logo_animation/flower.dart';
+
+import 'light_switch.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FlowerAnimation()
+      home: const LightSwitch()
     );
   }
 }

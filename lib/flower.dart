@@ -234,12 +234,12 @@ class Petal extends StatelessWidget {
               height: 100,
               width: 100,
               decoration: BoxDecoration(
-                  gradient: RadialGradient(
-                      colors: [
-                        color1!,
-                        color2!
-                      ]
-                  )
+                gradient: RadialGradient(
+                  colors: [
+                    color1!,
+                    color2!
+                  ]
+                )
               ),
             ),
           ),
@@ -248,6 +248,7 @@ class Petal extends StatelessWidget {
     );
   }
 }
+
 
 class PetalClipper extends CustomClipper<Path> {
   @override
