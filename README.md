@@ -21,6 +21,14 @@ flutter run
 
 ## Screenshots & Gifs
 
+#### Light Switch Animation -- [YouTube Link](https://youtu.be/fJUbK6GZ_d0) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/light_switch.dart)
+![Light Switch Animation](screenshots/lightswitch.gif)
+|              Example             |             Banner           |
+| :----------------------------------: | :----------------------------------: |
+| ![Breathe Animation](screenshots/flower.gif) | ![Breathe Animation](screenshots/session_004.png) |
+
+---
+
 #### Breathe/Flower animation -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/flower.dart)
 ![Breathe Animation](screenshots/flower.gif)
 |              Example             |             Banner           |

@@ -21,7 +21,7 @@ class _LightSwitchState extends State<LightSwitch> {
           Align(
             alignment: Alignment.bottomCenter,
             child: ClipPath(
-              clipper: LightClipper(),
+              clipper: LightClipper(size.height),
               child: AnimatedContainer(
                 curve: Curves.bounceOut,
                 duration: const Duration(milliseconds: 200),
@@ -31,7 +31,7 @@ class _LightSwitchState extends State<LightSwitch> {
             ),
           ),
           Positioned(
-            top: size.height/2.62,
+            top: 355,
             right: 50,
             child: Container(
               padding: const EdgeInsets.all(5),
@@ -104,12 +104,15 @@ class _LightSwitchState extends State<LightSwitch> {
 }
 
 class LightClipper extends CustomClipper<Path> {
+  final double screenHeight;
+  LightClipper(this.screenHeight);
+
   @override
   Path getClip(Size size) {
     final height = size.height;
     final width = size.width;
 
-    double control = height >= 900 ? 0 : 40;
+    double control = height >= screenHeight*0.95 ? 0 : 40;
 
     final path = Path();
 
