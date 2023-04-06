@@ -21,11 +21,19 @@ flutter run
 
 ## Screenshots & Gifs
 
+#### Airpods Animation -- [YouTube Link](https://youtu.be/fJUbK6GZ_d0) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/airpod_animation.dart)
+![Airpods Animation](screenshots/airpods.gif)
+|              Example             |             Banner           |
+| :----------------------------------: | :----------------------------------: |
+| ![Airpods Animation](screenshots/airpods.gif) | ![Airpods Animation](screenshots/session_006.png) |
+
+---
+
 #### Light Switch Animation -- [YouTube Link](https://youtu.be/fJUbK6GZ_d0) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/light_switch.dart)
 ![Light Switch Animation](screenshots/lightswitch.gif)
 |              Example             |             Banner           |
 | :----------------------------------: | :----------------------------------: |
-| ![Breathe Animation](screenshots/lightswitch.gif) | ![Breathe Animation](screenshots/session_005.png) |
+| ![Light Switch Animation](screenshots/lightswitch.gif) | ![Light Switch Animation](screenshots/session_005.png) |
 
 ---
 
