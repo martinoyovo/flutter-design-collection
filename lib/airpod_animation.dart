@@ -47,7 +47,7 @@ class _AirpodAnimationState extends State<AirpodAnimation> {
               child: Column(
                 children: [
                   const Text("Tino's Airpods Max",
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(
