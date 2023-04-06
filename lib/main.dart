@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'light_switch.dart';
+import 'package:flutter_logo_animation/airpod_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LightSwitch()
+      home: const AirpodAnimation()
     );
   }
 }
