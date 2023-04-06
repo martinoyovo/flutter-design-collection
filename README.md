@@ -21,7 +21,7 @@ flutter run
 
 ## Screenshots & Gifs
 
-#### Airpods Rotation -- [YouTube Link](https://youtu.be/fJUbK6GZ_d0) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/airpod_animation.dart)
+#### Airpods Rotation -- [YouTube Link](https://youtu.be/4htTxGYG-9U) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/airpod_animation.dart)
 ![Airpods Rotation](screenshots/airpods.gif)
 |              Example             |             Banner           |
 | :----------------------------------: | :----------------------------------: |
