@@ -53,7 +53,7 @@ flutter run
 
 ---
 
-#### Animation that extends a card to full screen on tap -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/custom_loader.dart)
+#### Animated custom loader -- [YouTube Link](https://youtu.be/960CR8J4_tc) | [Link to code](https://github.com/martinoyovo/flutter-design-collection/blob/main/lib/custom_loader.dart)
 ![Custom Loader](screenshots/custom_loader.gif)
 |              Example             |             Banner           |
 | :----------------------------------: | :----------------------------------: |
