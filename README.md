@@ -1,4 +1,4 @@
-# 😍🔥 Flutter Animation Collection 💙 ![GitHub stars](https://img.shields.io/github/stars/martinoyovo/flutter-design-collection?style=social)
+# Flutter Animation Collection 💙 ![GitHub stars](https://img.shields.io/github/stars/martinoyovo/flutter-design-collection?style=social)
 
 ![Bike Animation](https://img.shields.io/badge/platform-Flutter-blue)
 ![Repository size](https://img.shields.io/github/repo-size/martinoyovo/flutter-design-collection)
